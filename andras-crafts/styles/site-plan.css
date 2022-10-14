@@ -29,6 +29,10 @@ Fonts are separated by a | */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
+.hero-img {
+  width: 100%;
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;
