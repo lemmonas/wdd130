@@ -29,14 +29,6 @@ Fonts are separated by a | */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
-.hero-img {
-  width: 100%;
-}
-
-.wireframe {
-  width: 50%;
-}
-
 body {
   max-width: 1200px;
   margin: 0 auto;
@@ -48,6 +40,15 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+.hero-img {
+  width: 100%;
+}
+
+.wireframe {
+  width: 50%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
