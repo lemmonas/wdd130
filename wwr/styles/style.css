@@ -243,6 +243,142 @@ nav a:hover {
     grid-row: 2/3;
 }
 
+/* CSS for second page */
+
+#hero-msg-rivers {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 150px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hero-msg-rivers h1 {
+    text-align: center;
+    /* color: white; */
+    background: rgba(36, 147, 215, .6);
+}
+
+#hero-msg-rivers h4 {
+    text-align: center;
+    color: white;
+    background: rgba(36, 147, 215, .6);
+    padding: 10px;
+}
+
+#salmon, #desolation, #grand-canyon {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+#salmon-img {
+    width: 100%;
+    min-height: 500px;
+    z-index: -1;
+}
+
+#desolation-img {
+    width: 100%;
+    min-height: 500px;
+    z-index: -1;
+}
+
+#grand-canyon-img {
+    width: 100%;
+    min-height: 500px;
+    z-index: -1;
+}
+
+#salmon-box, #desolation-box, #grand-canyon-box {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    z-index: -1;
+}
+
+#salmon-msg {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background: rgba(36, 147, 215, .6);
+    padding: 10px;
+    margin-top: -300px;
+    justify-self: center;
+    align-self: center;
+}
+
+#salmon-title{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+}
+
+#desolation-msg {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background: rgba(36, 147, 215, .6);
+    padding: 10px;
+    margin-top: -300px;
+    justify-self: center;
+    align-self: center;
+}
+
+#desolation-title{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+}
+
+#grand-canyon-msg {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background: rgba(36, 147, 215, .6);
+    padding: 10px;
+    margin-top: -300px;
+    justify-self: center;
+    align-self: center;
+}
+
+#grand-canyon-title{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+}
+
+#salmon {
+    background-image: url("wwr/images/salmon-river.jpg");
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/4;
+}
+
+#desolation {
+    background-image: url("wwr/images/desolation-river.jpg");
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/4;
+}
+
+#grand-canyon {
+    background-image: url("wwr/images/grand-canyon-river.jpg");
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/4;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -283,5 +419,10 @@ nav a:hover {
     }
     footer {
         margin-top: 25px;
+    }
+    #salmon, #desolation, #grand-canyon {
+        display: block;
+        height: auto;
+        background-attachment: scroll;
     }
 }
