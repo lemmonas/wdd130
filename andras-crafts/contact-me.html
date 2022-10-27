@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="feedback"></div>
     <div id="content">
         <header>
             <a href="index.html" id="logo-link">
@@ -23,10 +24,10 @@
             <img id="banner-img" src="images/rainbow-yarn.jpg" alt="Rainbow of yarn banner">
             <h1 id="title">Andra's Crafts</h1>
         </header>
-        <main>
-            <h3 id="contact-title">Contact Me</h3>
+        <main class="contact-grid">
+            <h2 id="contact-title">Contact Me</h2>
+            <img id="contact-img" src="images/yarn-wreath.jpg" alt="Wreath of yarn">
             <div id="contact-msg">
-                <img src="images/yarn-wreath.jpg" alt="Wreath of yarn">
                 <h4>Can't find what you're looking for?</h4>
                 <h4>Have a specific request?</h4>
                 <h4>Let me know!</h4>
@@ -42,17 +43,25 @@
                     <li>
                         <textarea id="msg" name="user_message">Questions/Requests</textarea>
                     </li>
-                    <li class="button">
-                        <button type="submit">Submit</button>
-                    </li>
                 </ul>
             </form>
+            <button class="button" type="submit">Submit</button>
         </main>
         <footer>
             <p>Andra's Crafts &copy; 2022</p>
             <p><a href="site-plan.html">Site Plan</a></p>
         </footer>
     </div>
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 
 </html>
